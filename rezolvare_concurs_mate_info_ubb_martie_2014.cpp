@@ -11,7 +11,7 @@ b). tipărirea unui şir
 c). verificarea dacă un număr este prim
 d). verificarea dacă un număr este „superprim”
 e). inserarea unei valori ȋntr-un șir ordonat descrescător
-f). construirea șirului X. */
+f). construirea șirului X.*/
 #include <iostream>
 #include <fstream>
 #define usi unsigned short int
