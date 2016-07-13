@@ -13,7 +13,7 @@ respectiva*/
 #include <iostream>
 #define usi unsigned int
 using namespace std;
-int divizor(usi sir_generat[], usi dimensiune_sir_generat)
+int generare_sir(usi sir_generat[], usi dimensiune_sir_generat)
 {
     usi i=1, j=1;
     while(j<=dimensiune_sir_generat)
@@ -46,10 +46,7 @@ int cifra_maxima(int numar)
     while(numar>0)
     {
         if(numar%10>maxim)
-        {
             maxim=numar%10;
-        }
-
         numar=numar/10;
     }
     return maxim;
@@ -86,7 +83,7 @@ int construire_numar(usi matrice_initala[9][9], usi dimensiune_matrice)
                 frecventa[i]--; //decrementam frecventa cifrei afisate
             }
         }
-       cout<<" ";
+       cout<<" ";//afisam un spatiu dupa fiecare numar
     }
 }
 int main()
@@ -95,7 +92,7 @@ int main()
     cin>>dimensiune_matrice;
     dimensiune_sir=2*(dimensiune_matrice*dimensiune_matrice); //marimea sirului generat
     usi sir_generat[dimensiune_sir+1]; //marimea sirului generat
-    divizor(sir_generat,dimensiune_sir);
-    construirea_matricei(matrice_initala,sir_generat,dimensiune_matrice);
-    construire_numar(matrice_initala,dimensiune_matrice);
+    generare_sir(sir_generat,dimensiune_sir); //generarea sirului dupa regula data in enunt
+    construirea_matricei(matrice_initala,sir_generat,dimensiune_matrice); //construirea matricei dupa regulile date in enunt
+    construire_numar(matrice_initala,dimensiune_matrice); //afisarea numerelor maxime formate din elementele de pe coloanele matricei
 }
