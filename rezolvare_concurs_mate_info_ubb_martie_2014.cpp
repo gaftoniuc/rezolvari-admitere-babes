@@ -16,7 +16,6 @@ f). construirea șirului X.*/
 #include <fstream>
 #define usi unsigned short int
 using namespace std;
-
 ifstream r("rezolvare_concurs_mate_info_ubb_martie_2014.txt");
 void citire(usi a[][100], usi &n)
 {
