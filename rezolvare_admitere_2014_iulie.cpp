@@ -89,8 +89,6 @@ int construire_numar(usi matrice_initala[9][9], usi dimensiune_matrice)
        cout<<" ";
     }
 }
-
-
 int main()
 {
     usi dimensiune_matrice, dimensiune_sir, matrice_initala[9][9];
