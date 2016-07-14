@@ -1,4 +1,4 @@
-/*Se citeşte de la tastatură o matrice pătratică A cu n linii și n coloane conținȃnd numere naturale (3 ≤ n ≤ 50, 1 ≤
+/* Se citeşte de la tastatură o matrice pătratică A cu n linii și n coloane conținȃnd numere naturale (3 ≤ n ≤ 50, 1 ≤
 ai,j ≤ 20000). Scrieţi un program care determină și apoi tipărește şirul X, conținȃnd ȋn ordine descrescătoare,
 numerele „superprime” distincte, care apar ȋn triunghiul stȃng sau cel drept al matricei A. Șirul X se va construi
 direct ordonat, fără a face ordonarea ulterioară. Ȋn cazul ȋn care șirul X este vid, se va tipări mesajul „Șirul este
@@ -11,7 +11,7 @@ b). tipărirea unui şir
 c). verificarea dacă un număr este prim
 d). verificarea dacă un număr este „superprim”
 e). inserarea unei valori ȋntr-un șir ordonat descrescător
-f). construirea șirului X.*/
+f). construirea șirului X. */
 #include <iostream>
 #include <fstream>
 #define usi unsigned short int
