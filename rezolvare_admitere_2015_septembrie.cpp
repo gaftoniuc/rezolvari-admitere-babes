@@ -1,9 +1,9 @@
-/* Se citeºte un sir de numere naturale nenule, unde 1 < n < 200, 1 < xi < 30000. Un element xi
-situat in sir pe pozitia i (1 < i < n-1) se numeste perfect dacã are cel putin o cifrã comunã cu toate elementele
-situate in sir dupã el. Sã se scrie un program care insereazã in sirul X, dupã fiecare element care
-este perfect, divizorii sãi proprii (divizorii se vor considera in ordine descrescãtoare). Dupã modificarea sirului
-X, se va construi ?irul con?in?nd ordinea in care ar trebui afisate elementele sirului X pentru a
-fi in ordine descrescãtoare. La final, se va tipãri sirul X in ordinea datã de O. */
+/* Se citeÅŸte un sir de numere naturale nenule, unde 1 < n < 200, 1 < xi < 30000. Un element xi
+situat in sir pe pozitia i (1 < i < n-1) se numeste perfect dacÄƒ are cel putin o cifrÄƒ comunÄƒ cu toate elementele
+situate in sir dupÄƒ el. SÄƒ se scrie un program care insereazÄƒ in sirul X, dupÄƒ fiecare element care
+este perfect, divizorii sÄƒi proprii (divizorii se vor considera in ordine descrescÄƒtoare). DupÄƒ modificarea sirului
+X, se va construi sirul continand ordinea in care ar trebui afisate elementele sirului X pentru a
+fi in ordine descrescÄƒtoare. La final, se va tipÄƒri sirul X in ordinea datÄƒ de O. */
 #include <iostream>
 #define ui unsigned int
 using namespace std;
