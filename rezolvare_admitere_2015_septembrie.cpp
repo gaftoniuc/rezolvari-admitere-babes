@@ -11,7 +11,7 @@ void citire(int sir_initial[], int &n)
 {
     cout<<"n:";
     cin>>n;
-    for(int i=1;i<=n;i++)
+    for(int i=1; i<=n; i++)
     {
         cout<<"x["<<i<<"]:";
         cin>>sir_initial[i];
@@ -40,17 +40,17 @@ int numar_perfect(int numar1, int numar2) //verificam utilizand un vector de fre
     ui n1, n2;
     n1=numar1;
     n2=numar2;
-    for(int i=1;i<=numar_cifre(n1);i++)
+    for(int i=1; i<=numar_cifre(n1); i++)
     {
         vector_cifre1[(numar1)%10]=1;
         numar1/=10;
     }
-    for(int i=1;i<=numar_cifre(n2);i++)
+    for(int i=1; i<=numar_cifre(n2); i++)
     {
          vector_cifre2[(numar2)%10]=1;
          numar2/=10;
     }
-    for(int i=0;i<=9;i++)
+    for(int i=0; i<=9; i++)
     if(vector_cifre1[i]!=0 || vector_cifre2[i]!=0)
             if(vector_cifre1[i]==vector_cifre2[i]) return 1;
     return 0;
@@ -58,16 +58,16 @@ int numar_perfect(int numar1, int numar2) //verificam utilizand un vector de fre
 int nr_divizori(int numar)
 {
      int divizori=0;
-     for(int div=numar-1;div>=2;div--)
+     for(int div=numar-1; div>=2; div--)
         if(numar%div==0) divizori++;
      return divizori;
 }
 void cifre_perfecte(int sir_initial[], int &marime_sir_initiala)
 {
     int ok=0, aux, i, j, ls=0, ld=0, div, poz;
-    for(i=1;i<=marime_sir_initiala;i++)
+    for(i=1; i<=marime_sir_initiala; i++)
     {
-        for(j=1;j<=marime_sir_initiala-1;j++)
+        for(j=1; j<=marime_sir_initiala-1; j++)
         {
             if(numar_perfect(sir_initial[i],sir_initial[j])) //verificam secventele formate din numere care au cel putin o cifra identica
             {
@@ -80,7 +80,7 @@ void cifre_perfecte(int sir_initial[], int &marime_sir_initiala)
     }
     aux=sir_initial[ls];
     poz=ld+1;
-    for(div=sir_initial[ld]-1;div>=2;div--)
+    for(div=sir_initial[ld]-1; div>=2; div--)
         if(sir_initial[ld]%div==0) sir_initial[poz++]=div; //generam sirul in functie de secventa cu divizorii numarului ce se afla pe pozitia limiteai la stanga
     sir_initial[poz]=aux; //memoram elementul care margineste superior secventa si il punem la sfarsitul modificarii acesteia
     marime_sir_initiala=marime_sir_initiala+nr_divizori(sir_initial[ls])+1; //marim dimensiunea sirului initial
@@ -96,10 +96,10 @@ int cautare(int x[], int n, int element)
 void generare_o(int sir_secundar[], int sir_initial[], int marime_sir_initiala)
 {
     int aux=0;
-    for(int i=1;i<=marime_sir_initiala;i++) //generam sirul initial de pozitii
+    for(int i=1; i<=marime_sir_initiala; i++) //generam sirul initial de pozitii
         sir_secundar[i]=i;
-    for(int i=1;i<marime_sir_initiala;i++)
-        for(int j=i+1;j<=marime_sir_initiala;j++)
+    for(int i=1; i<marime_sir_initiala; i++)
+        for(int j=i+1; j<=marime_sir_initiala; j++)
             if(sir_initial[sir_secundar[i]]<sir_initial[sir_secundar[j]]) //modificam pozitiile in functie de valoarea pe care o au in sirul initial
             {
                 aux=sir_secundar[i];
@@ -109,9 +109,9 @@ void generare_o(int sir_secundar[], int sir_initial[], int marime_sir_initiala)
 }
 int main()
 {
-    int x[100],y[100], n;
-    citire(x,n);
-    cifre_perfecte(x,n);
+    int x[100], y[100], n;
+    citire(x, n);
+    cifre_perfecte(x, n);
     generare_o(y, x ,n);
     afisare(x, y, n);
 }
