@@ -1,14 +1,14 @@
-/*Se citeºte un ºir X de numere naturale cu n elemente (1 ? n ? 500, 1 ? Xi ? 1000). Scrieþi un program care
-determinã ºirul Y de numere prime distincte, care figureazã la puterea întâi în cel puþin o descompunere ?n factori
-primi a unui numãr din ?irul X. Dacã nici un element al ºirului X nu are un factor prim la puterea întâi, atunci se va
-tipãri mesajul ´Sirul Y e vid.´
+/*Se citeÅŸte un ÅŸir X de numere naturale cu n elemente (1 < n < 500, 1 < Xi < 1000). ScrieÅ£i un program care
+determinÄƒ ÅŸirul Y de numere prime distincte, care figureazÄƒ la puterea Ã®ntÃ¢i Ã®n cel puÅ£in o descompunere in factori
+primi a unui numÄƒr din sirul X. DacÄƒ nici un element al ÅŸirului X nu are un factor prim la puterea Ã®ntÃ¢i, atunci se va
+tipÄƒri mesajul Â´Sirul Y e vid.Â´
 Se vor scrie subprograme pentru:
-a). citirea unui ºir de numere naturale
-b). tipãrirea unui ºir
-c). generarea tuturor numerelor prime mai mici sau egale decât un numãr dat SAU verificarea dacã un numãr
-este prim (?n func?ie de modalitatea de rezolvare aleasã)
-d). verificarea dacã un numãr figureazã la puterea întâi în descompunerea unui numãr dat
-e). construirea ?irului Y*/
+a) citirea unui ÅŸir de numere naturale
+b) tipÄƒrirea unui ÅŸir
+c) generarea tuturor numerelor prime mai mici sau egale decÃ¢t un numÄƒr dat SAU verificarea dacÄƒ un numÄƒr
+este prim (?n func?ie de modalitatea de rezolvare aleasÄƒ)
+d) verificarea dacÄƒ un numÄƒr figureazÄƒ la puterea Ã®ntÃ¢i Ã®n descompunerea unui numÄƒr dat
+e) construirea ?irului Y*/
 #include <iostream>
 using namespace std;
 void citire(int sir_initial[], int &n)
