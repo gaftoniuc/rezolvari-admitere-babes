@@ -6,7 +6,7 @@ Se vor scrie subprograme pentru:
 a) citirea unui şir de numere naturale
 b) tipărirea unui şir
 c) generarea tuturor numerelor prime mai mici sau egale decât un număr dat SAU verificarea dacă un număr
-este prim (in func?ie de modalitatea de rezolvare aleasă)
+este prim (in functie de modalitatea de rezolvare aleasă)
 d) verificarea dacă un număr figurează la puterea întâi în descompunerea unui număr dat
 e) construirea sirului Y*/
 #include <iostream>
