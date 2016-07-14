@@ -6,7 +6,7 @@ Se vor scrie subprograme pentru:
 a). citirea unui ºir de numere naturale
 b). tipãrirea unui ºir
 c). generarea tuturor numerelor prime mai mici sau egale decât un numãr dat SAU verificarea dacã un numãr
-este prim (in functie de modalitatea de rezolvare aleasã)
+este prim (?n func?ie de modalitatea de rezolvare aleasã)
 d). verificarea dacã un numãr figureazã la puterea întâi în descompunerea unui numãr dat
 e). construirea ?irului Y*/
 #include <iostream>
@@ -43,24 +43,18 @@ int cautare(int sir_final[], int marime_sir_final, int element)
         if(sir_final[i]==element) ok=1;
     return ok;
 }
-int generare_divizori(int sir_initial[], int marime_sir_initial, int sir_final[], int &marime_sir_final)
+int generare_sir(int sir_initial[], int marime_sir_initial, int sir_final[], int &marime_sir_final)
 {
     for(int i=1;i<=marime_sir_initial;i++)
-    {
         for(int j=2;j<=sir_initial[i];j++) //cautam toti divizorii unui element din sirul initial
-        {
             if(sir_initial[i]%j==0)
-            {
                 if(prim(j)==1 && cautare(sir_final, marime_sir_final, j)==0) //daca elementul figureaza deja descompus la o putere prima il omitem si cautam alt divizor prim
-                sir_final[++marime_sir_final]=j; //daca nu exista in sirul final il adaugam, daca este unic.
-            }
-        }
-    }
+                    sir_final[++marime_sir_final]=j; //daca nu exista in sirul final il adaugam, daca este unic.
 }
 int main()
 {
     int sir_inital[500], sir_final[500], marime_sir_initial, marime_sir_final=0;
     citire(sir_inital, marime_sir_initial);
-    generare_divizori(sir_inital, marime_sir_initial, sir_final, marime_sir_final);
+    generare_sir(sir_inital, marime_sir_initial, sir_final, marime_sir_final);
     afisare(sir_final,marime_sir_final);
 }
