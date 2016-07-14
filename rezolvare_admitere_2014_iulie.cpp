@@ -1,4 +1,4 @@
-/*Fie sirul X=(1,2,3,4,2,5,6,2,3,7,8,2,4,9,3,10,2,5,11,12,2,3,4,6,13...) obtinut din sirul numerelor
+/* Fie sirul X=(1,2,3,4,2,5,6,2,3,7,8,2,4,9,3,10,2,5,11,12,2,3,4,6,13...) obtinut din sirul numerelor
 naturale nenule prin inserarea dupa fiecare numar a divizorilor sai proprii.Scrieti un program care citeste
 de la tastatura un numar natural n (2<n<9), construieste o matrice A cu n linii si n coloane, formata
 din cifre in felul urmator:
@@ -9,7 +9,7 @@ n^2+i+j din sirul X.
 un element situat pe diagonala secundara a matricei pe linia i va fi cifra maxima a numarului de pe pozitia
 n^2+i^2 din sirul X.
 si apoi pentru fiecare coloana a matricei A se afiseaza cel mai mare numar zecimal format din cifrele de pe coloana
-respectiva*/
+respectiva */
 #include <iostream>
 #define usi unsigned int
 using namespace std;
